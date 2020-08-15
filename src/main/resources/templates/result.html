@@ -6,9 +6,7 @@
 </head>
 <body>
 	<h1>Result</h1>
-    <p th:text="'id: ' + ${user.id}" />
-    <p th:text="'name: ' + ${user.name}" />
-    <p th:text="'email: ' + ${user.email}" />
-    <a href="/demo/add">Submit another message</a>
+    <p th:text="'You have to save ' + ${finGoal.saving} + ' per month for the next ' +${finGoal.time} + ' months to accumulate '+ ${finGoal.goal}"/>
+    <a href="/demo">Calculate another Goal</a>
 </body>
 </html>

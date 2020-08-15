@@ -5,10 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-	<h1>Form</h1>
-    <form action="#" th:action="@{/demo/add}" th:object="${user}" method="post">
-    	<p>Name: <input type="text" th:field="*{name}" /></p>
-        <p>Email: <input type="text" th:field="*{email}" /></p>
+	<h1>Calculate Financial Goals</h1>
+    <form action="#" th:action="@{/demo}" th:object="${finGoal}" method="post">
+    	<p>Time(in months): <input type="text" th:field="*{time}" /></p>
+        <p>Goal(in rupees): <input type="text" th:field="*{goal}" /></p>
         <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
     </form>
 </body>
